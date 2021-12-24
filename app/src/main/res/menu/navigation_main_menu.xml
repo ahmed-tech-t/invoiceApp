@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Add_new_Bill"
+        android:title="Add new Bill" />
+
+    <item
+        android:id="@+id/Add_Exist_Product"
+        android:title="Add Exist Product" />
+    <item
+        android:id="@+id/Add_new_Customer"
+        android:title="Add new Customer" />
+    <item
+        android:id="@+id/Add_new_Product"
+        android:title="Add new Product" />
+
+    <item
+        android:id="@+id/get_all_qrcodes"
+        android:title="Get All QrCodes" />
+    <item
+        android:id="@+id/manage_products"
+        android:title="Manage Products" />
+</menu>

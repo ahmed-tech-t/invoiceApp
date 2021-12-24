@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">App pro</string>
+    <string name="editText_Name"><font size="18">Name</font></string>
+    <string name="editText_Age"><font size="18">Age</font></string>
+    <string name="editText_Gender"><font size="18">(M or F)</font></string>
+    <string name="editText_Jop"><font size="18">Job</font></string>
+    <string name="editText_IdCard"><font size="18">Id Card</font></string>
+    <string name="editText_PhoneNumber"><font size="18">Phone Number</font></string>
+    <string name="editText_Address"><font size="18">Address</font></string>
+    <string name="Date"><font size="18">Date</font></string>
+    <string name="editText_PurchasingPrice"><font size="18">Purchasing Price</font></string>
+    <string name="editText_Price"><font size="18">Price</font></string>
+    <string name="editText_Given"><font size="18">Given</font></string>
+    <string name="editText_number_of_installments"><font size="18">number of installments</font></string>
+    <string name="editText_quantity"><font size="12">Quantity</font></string>
+    <string name="editText_Bill"><font size="18">Bill</font></string>
+    <string name="editText_Cus"><font size="18">Client</font></string>
+    <string name="editText_total"><font size="18">total</font></string>
+    <string name="editText_code"><font size="18">code</font></string>
+    <string name="editText_qr_code"><font size="18">QrCode</font></string>
+    <string name="editText_Bar_code"><font size="18">BarCode</font></string>
+    <string name="editText_Production_Date"><font size="18">Production Date</font></string>
+    <string name="editText_expiry_Date"><font size="18">Expiry Date</font></string>
+    <string name="editText_section"><font size="18">Section</font></string>
+    <string name="editText_store"><font size="18">Store</font></string>
+    <string name="editText_countryOfOrigin"><font size="18">Country Of Origin</font></string>
+    <string name="editText_weight"><font size="18">Weight</font></string>
+    <string-array name="payedType">
+        <item>كاش</item>
+
+        <item>قسط</item>
+    </string-array>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

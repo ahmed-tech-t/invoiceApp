@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_all"
+    tools:context=".AddProduct">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBarAddPro"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:id="@+id/scrollViewAddPro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolBarAddPro">
+        <LinearLayout
+            android:id="@+id/productList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+                <EditText
+                    android:background="@drawable/edit_text_background"
+                    android:padding="20dp"
+                    android:elevation="5dp"
+                    android:id="@+id/etAddProName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="@string/editText_Name"
+                    android:inputType="textPersonName"
+                    android:textSize="18dp" />
+
+
+                <EditText
+                    android:background="@drawable/edit_text_background"
+                    android:padding="20dp"
+                    android:elevation="5dp"
+                    android:id="@+id/etAddProPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/editText_Price"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:inputType="number"
+                    android:textSize="18dp" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/etAddProCountryOfOriginSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_background"
+                    android:elevation="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="10dp" />
+
+            <EditText
+                    android:background="@drawable/edit_text_background"
+                    android:padding="20dp"
+                    android:elevation="5dp"
+                    android:id="@+id/etAddProProductionDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="@string/editText_Production_Date"
+                    android:inputType="date"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:background="@drawable/edit_text_background"
+                    android:padding="20dp"
+                    android:elevation="5dp"
+
+                    android:id="@+id/etAddProExpiryDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="@string/editText_expiry_Date"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:inputType="date"
+                    android:textSize="18dp" />
+
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:background="@drawable/edit_text_background"
+                android:padding="10dp"
+                android:elevation="5dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/etAddProSectionSpinner" />
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:background="@drawable/edit_text_background"
+                android:padding="10dp"
+                android:elevation="5dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/etAddProStoreSpinner" />
+
+                <EditText
+                    android:background="@drawable/edit_text_background"
+                    android:padding="20dp"
+                    android:elevation="5dp"
+
+                    android:id="@+id/etAddProWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="@string/editText_weight"
+                    android:inputType="number"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:elevation="5dp"
+                    android:id="@+id/saveProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/round_primary"
+                    android:padding="10dp"
+                    android:onClick="saveProduct"
+                    android:text="save"
+                    android:layout_marginBottom="40dp"
+                    android:textColor="@color/White"
+                    android:textSize="18dp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp">
+
+    <TextView
+        android:id="@+id/totalProPrice"
+        android:layout_width="0px"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="12dp"
+        android:layout_weight=".3"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="="
+        android:gravity="center"
+        android:textSize="15dp"
+        />
+    <EditText
+        android:id="@+id/billProductQuantity"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:hint="@string/editText_quantity"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:maxLines="1"
+        android:lines="1"
+        android:singleLine="true"
+        android:background="@null"
+
+        android:layout_weight=".3"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x"
+        android:gravity="center"
+        android:textSize="15dp"
+        />
+    <TextView
+        android:id="@+id/billProductPrice"
+        android:layout_width="0px"
+        android:gravity="right"
+        android:layout_height="wrap_content"
+        android:text="سعر المنتج"
+        android:textSize="12dp"
+        android:layout_weight=".3"/>
+    <TextView
+        android:layout_marginRight="20dp"
+        android:id="@+id/billProductName"
+        android:layout_height="wrap_content"
+        android:layout_width="0px"
+        android:gravity="right"
+        android:textSize="15dp"
+        android:text="اسم المنتج"
+        android:layout_weight=".9" />
+
+</LinearLayout>
